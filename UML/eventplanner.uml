@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<uml:Model xmi:version="20110701" xmlns:xmi="http://www.omg.org/spec/XMI/20110701" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:uml="http://www.eclipse.org/uml2/4.0.0/UML" xmi:id="_QDMCIMJKEeOaaL_FKGKzng" name="EventPlanner">
+  <packagedElement xmi:type="uml:Class" xmi:id="_f1I38MJKEeOaaL_FKGKzng" name="Account">
+    <ownedAttribute xmi:id="_nk3jwMJKEeOaaL_FKGKzng" name="id" visibility="protected">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/XMLPrimitiveTypes.library.uml#Integer"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_1BikQMJKEeOaaL_FKGKzng" name="name" visibility="protected">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/XMLPrimitiveTypes.library.uml#String"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_6KieYMJKEeOaaL_FKGKzng" name="email" visibility="protected">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/XMLPrimitiveTypes.library.uml#String"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_oTaLIMJSEeOaaL_FKGKzng" name="memberships" visibility="protected" type="_b-p5IMJLEeOaaL_FKGKzng">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_oTiuAMJSEeOaaL_FKGKzng" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_oTiuAcJSEeOaaL_FKGKzng" value="*"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_Sqf6QMJYEeOaaL_FKGKzng" name="games" visibility="protected" type="_O-jpcMJXEeOaaL_FKGKzng">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_SqlZ0MJYEeOaaL_FKGKzng"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_SqmA4MJYEeOaaL_FKGKzng" value="*"/>
+    </ownedAttribute>
+    <ownedOperation xmi:id="__yKG0MJNEeOaaL_FKGKzng" name="getId">
+      <ownedParameter xmi:id="_ORHqwMJOEeOaaL_FKGKzng" direction="return">
+        <name xsi:nil="true"/>
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/XMLPrimitiveTypes.library.uml#Integer"/>
+      </ownedParameter>
+    </ownedOperation>
+    <ownedOperation xmi:id="_CT8uIMJOEeOaaL_FKGKzng" name="setId">
+      <ownedParameter xmi:id="_DIiz0MJOEeOaaL_FKGKzng" name="id">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/XMLPrimitiveTypes.library.uml#Integer"/>
+      </ownedParameter>
+    </ownedOperation>
+    <ownedOperation xmi:id="_cCyD0MJOEeOaaL_FKGKzng" name="getName">
+      <ownedParameter xmi:id="_dcV3wMJOEeOaaL_FKGKzng" direction="return">
+        <name xsi:nil="true"/>
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/XMLPrimitiveTypes.library.uml#String"/>
+      </ownedParameter>
+    </ownedOperation>
+    <ownedOperation xmi:id="_i1_dAMJOEeOaaL_FKGKzng" name="setName">
+      <ownedParameter xmi:id="_klN-8MJOEeOaaL_FKGKzng" name="name">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/XMLPrimitiveTypes.library.uml#String"/>
+      </ownedParameter>
+    </ownedOperation>
+    <ownedOperation xmi:id="_pJmJEMJOEeOaaL_FKGKzng" name="getEmail">
+      <ownedParameter xmi:id="_qdR-gMJOEeOaaL_FKGKzng" direction="return">
+        <name xsi:nil="true"/>
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/XMLPrimitiveTypes.library.uml#String"/>
+      </ownedParameter>
+    </ownedOperation>
+    <ownedOperation xmi:id="_tURZwMJOEeOaaL_FKGKzng" name="setEmail">
+      <ownedParameter xmi:id="_u1q7EMJOEeOaaL_FKGKzng" name="email">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/XMLPrimitiveTypes.library.uml#String"/>
+      </ownedParameter>
+    </ownedOperation>
+    <ownedOperation xmi:id="_2aun8MJOEeOaaL_FKGKzng" name="getMemberships">
+      <ownedParameter xmi:id="_39dmAMJOEeOaaL_FKGKzng" type="_b-p5IMJLEeOaaL_FKGKzng" direction="return"/>
+    </ownedOperation>
+    <ownedOperation xmi:id="_6chpcMJOEeOaaL_FKGKzng" name="addMembership">
+      <ownedParameter xmi:id="_A1syAMJPEeOaaL_FKGKzng" name="membership" type="_b-p5IMJLEeOaaL_FKGKzng"/>
+    </ownedOperation>
+    <ownedOperation xmi:id="_cgl1oMJYEeOaaL_FKGKzng" name="deleteMembership">
+      <ownedParameter xmi:id="_fpuw0MJYEeOaaL_FKGKzng" name="membership" type="_b-p5IMJLEeOaaL_FKGKzng"/>
+    </ownedOperation>
+    <ownedOperation xmi:id="_i3mbAMJYEeOaaL_FKGKzng" name="getGames">
+      <ownedParameter xmi:id="_kfPHMMJYEeOaaL_FKGKzng" type="_O-jpcMJXEeOaaL_FKGKzng" direction="return"/>
+    </ownedOperation>
+    <ownedOperation xmi:id="_7DU_MMJYEeOaaL_FKGKzng" name="addGame">
+      <ownedParameter xmi:id="_98ztwMJYEeOaaL_FKGKzng" name="game" type="_O-jpcMJXEeOaaL_FKGKzng"/>
+    </ownedOperation>
+    <ownedOperation xmi:id="_ExnpcMJZEeOaaL_FKGKzng" name="deleteGame">
+      <ownedParameter xmi:id="_J9uh8MJZEeOaaL_FKGKzng" name="game" type="_O-jpcMJXEeOaaL_FKGKzng"/>
+    </ownedOperation>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_KZTzEMJLEeOaaL_FKGKzng" name="Guild">
+    <ownedAttribute xmi:id="_M_XPUMJLEeOaaL_FKGKzng" name="id" visibility="protected">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/XMLPrimitiveTypes.library.uml#Integer"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_VUREwMJLEeOaaL_FKGKzng" name="name" visibility="protected">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/XMLPrimitiveTypes.library.uml#String"/>
+    </ownedAttribute>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_b-p5IMJLEeOaaL_FKGKzng" name="Membership">
+    <ownedAttribute xmi:id="_fAkyAMJLEeOaaL_FKGKzng" name="id" visibility="protected">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/XMLPrimitiveTypes.library.uml#Integer"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_n1rxgMJLEeOaaL_FKGKzng" name="level" visibility="protected">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/XMLPrimitiveTypes.library.uml#Integer"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_r9tW0MJLEeOaaL_FKGKzng" name="name" visibility="protected">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/XMLPrimitiveTypes.library.uml#String"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_MA138MJTEeOaaL_FKGKzng" name="guild" visibility="protected" type="_KZTzEMJLEeOaaL_FKGKzng">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_MA8loMJTEeOaaL_FKGKzng" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_MA9MsMJTEeOaaL_FKGKzng" value="1"/>
+    </ownedAttribute>
+    <ownedOperation xmi:id="_iJ-SQMJTEeOaaL_FKGKzng" name="getId">
+      <ownedParameter xmi:id="_lEsW8MJTEeOaaL_FKGKzng" direction="return">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/XMLPrimitiveTypes.library.uml#Integer"/>
+      </ownedParameter>
+    </ownedOperation>
+    <ownedOperation xmi:id="_tI7TIMJTEeOaaL_FKGKzng" name="setId">
+      <ownedParameter xmi:id="_utyYIMJTEeOaaL_FKGKzng" name="id">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/XMLPrimitiveTypes.library.uml#Integer"/>
+      </ownedParameter>
+    </ownedOperation>
+    <ownedOperation xmi:id="_14uU0MJTEeOaaL_FKGKzng" name="getLevel">
+      <ownedParameter xmi:id="_3qLrYMJTEeOaaL_FKGKzng" direction="return">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/XMLPrimitiveTypes.library.uml#Integer"/>
+      </ownedParameter>
+    </ownedOperation>
+    <ownedOperation xmi:id="_-NpYYMJTEeOaaL_FKGKzng" name="setLevel">
+      <ownedParameter xmi:id="__gKJIMJTEeOaaL_FKGKzng" name="level">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/XMLPrimitiveTypes.library.uml#Integer"/>
+      </ownedParameter>
+    </ownedOperation>
+    <ownedOperation xmi:id="_EPNSMMJUEeOaaL_FKGKzng" name="getName">
+      <ownedParameter xmi:id="_KUOvsMJUEeOaaL_FKGKzng" direction="return">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/XMLPrimitiveTypes.library.uml#Integer"/>
+      </ownedParameter>
+    </ownedOperation>
+    <ownedOperation xmi:id="_NSX70MJUEeOaaL_FKGKzng" name="setName">
+      <ownedParameter xmi:id="_Oi-BAMJUEeOaaL_FKGKzng" name="name">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </ownedParameter>
+    </ownedOperation>
+    <ownedOperation xmi:id="_VduMoMJUEeOaaL_FKGKzng" name="getGuild">
+      <ownedParameter xmi:id="_YSn9MMJUEeOaaL_FKGKzng" type="_KZTzEMJLEeOaaL_FKGKzng" direction="return"/>
+    </ownedOperation>
+    <ownedOperation xmi:id="_cPXfkMJUEeOaaL_FKGKzng" name="setGuild">
+      <ownedParameter xmi:id="_d2Zu0MJUEeOaaL_FKGKzng" name="guild" type="_KZTzEMJLEeOaaL_FKGKzng"/>
+    </ownedOperation>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_CLOy0MJVEeOaaL_FKGKzng" name="Activity">
+    <ownedAttribute xmi:id="_FMngMMJVEeOaaL_FKGKzng" name="id" visibility="protected">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/XMLPrimitiveTypes.library.uml#Integer"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_Xa09EMJVEeOaaL_FKGKzng" name="groupMaxSize" visibility="protected">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/XMLPrimitiveTypes.library.uml#Integer"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_m3LWUMJVEeOaaL_FKGKzng" name="scenaryMaxSize" visibility="protected">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/XMLPrimitiveTypes.library.uml#Integer"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_fZaHwMJWEeOaaL_FKGKzng" name="title" visibility="protected">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_8SLC0MJWEeOaaL_FKGKzng" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_8SLC0cJWEeOaaL_FKGKzng" value="1"/>
+    </ownedAttribute>
+    <ownedOperation xmi:id="_I-wVEMJVEeOaaL_FKGKzng" name="getId">
+      <ownedParameter xmi:id="_KQitEMJVEeOaaL_FKGKzng" direction="return">
+        <name xsi:nil="true"/>
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/XMLPrimitiveTypes.library.uml#Integer"/>
+      </ownedParameter>
+    </ownedOperation>
+    <ownedOperation xmi:id="_OpGowMJVEeOaaL_FKGKzng" name="setId">
+      <ownedParameter xmi:id="_PtdBsMJVEeOaaL_FKGKzng" name="id">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/XMLPrimitiveTypes.library.uml#Integer"/>
+      </ownedParameter>
+    </ownedOperation>
+    <ownedOperation xmi:id="_5HSQoMJVEeOaaL_FKGKzng" name="getGroupMaxSize">
+      <ownedParameter xmi:id="_9BGa0MJVEeOaaL_FKGKzng" direction="return">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/XMLPrimitiveTypes.library.uml#Integer"/>
+      </ownedParameter>
+    </ownedOperation>
+    <ownedOperation xmi:id="_B9mxEMJWEeOaaL_FKGKzng" name="setGroupMaxSize">
+      <ownedParameter xmi:id="_EP8AEMJWEeOaaL_FKGKzng" name="maxSize">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/XMLPrimitiveTypes.library.uml#Integer"/>
+      </ownedParameter>
+    </ownedOperation>
+    <ownedOperation xmi:id="_JKsC0MJWEeOaaL_FKGKzng" name="getScenaryMaxSize">
+      <ownedParameter xmi:id="_LNQXgMJWEeOaaL_FKGKzng" direction="return">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/XMLPrimitiveTypes.library.uml#Integer"/>
+      </ownedParameter>
+    </ownedOperation>
+    <ownedOperation xmi:id="_PJzFkMJWEeOaaL_FKGKzng" name="setScenaryMaxSize">
+      <ownedParameter xmi:id="_RIkfYMJWEeOaaL_FKGKzng" name="maxSize">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/XMLPrimitiveTypes.library.uml#Integer"/>
+      </ownedParameter>
+    </ownedOperation>
+    <ownedOperation xmi:id="_jAGhoMJWEeOaaL_FKGKzng" name="getTitle">
+      <ownedParameter xmi:id="_k3gvMMJWEeOaaL_FKGKzng" direction="return">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/XMLPrimitiveTypes.library.uml#String"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_22nZEMJWEeOaaL_FKGKzng" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_22onMMJWEeOaaL_FKGKzng" value="1"/>
+      </ownedParameter>
+    </ownedOperation>
+    <ownedOperation xmi:id="_oqWusMJWEeOaaL_FKGKzng" name="setTitle">
+      <ownedParameter xmi:id="_qkYLYMJWEeOaaL_FKGKzng" name="title">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </ownedParameter>
+    </ownedOperation>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_O-jpcMJXEeOaaL_FKGKzng" name="Game">
+    <generalization xmi:id="_AyZ3UMJYEeOaaL_FKGKzng" general="_CLOy0MJVEeOaaL_FKGKzng"/>
+    <ownedAttribute xmi:id="_xNf_AMJXEeOaaL_FKGKzng" name="maxLevel" visibility="protected">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/XMLPrimitiveTypes.library.uml#Integer"/>
+    </ownedAttribute>
+    <ownedOperation xmi:id="_1GDk8MJXEeOaaL_FKGKzng" name="getMaxLevel">
+      <ownedParameter xmi:id="_2TmWIMJXEeOaaL_FKGKzng" direction="return">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/XMLPrimitiveTypes.library.uml#Integer"/>
+      </ownedParameter>
+    </ownedOperation>
+    <ownedOperation xmi:id="_4iZI8MJXEeOaaL_FKGKzng" name="setMaxLevel">
+      <ownedParameter xmi:id="_8X5a4MJXEeOaaL_FKGKzng" name="maxLevel">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/XMLPrimitiveTypes.library.uml#Integer"/>
+      </ownedParameter>
+    </ownedOperation>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_BkkUEMJYEeOaaL_FKGKzng" name="Social">
+    <generalization xmi:id="_F3WX4MJYEeOaaL_FKGKzng" general="_CLOy0MJVEeOaaL_FKGKzng"/>
+  </packagedElement>
+</uml:Model>
