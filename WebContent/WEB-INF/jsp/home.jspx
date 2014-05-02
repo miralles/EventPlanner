@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<jsp:root xmlns:jsp="http://java.sun.com/JSP/Page"
+    xmlns:spring="http://www.springframework.org/tags"
+	xmlns:fmt="http://java.sun.com/jsp/jstl/fmt" 
+	xmlns:c="http://java.sun.com/jsp/jstl/core" 
+	xmlns:sec="http://www.springframework.org/security/tags" version="2.2">
+<jsp:directive.page contentType="text/html; charset=UTF-8" 
+	pageEncoding="UTF-8" session="true"/>
+<jsp:output doctype-root-element="html"
+		doctype-public="-//W3C//DTD XHTML 1.0 Transitional//EN"
+		doctype-system="http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"
+		omit-xml-declaration="true" />
+		
+	<html xmlns="http://www.w3.org/1999/xhtml">
+		<head>
+			<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+			      
+			<title><fmt:message key="home.title"/></title>
+			<spring:url value="/resources/css/home.css" var="homecss" /> 	
+			<link rel="stylesheet" href="${homecss}" type="text/css" />
+			<spring:url value="/resources/images/schema_etudes.png" var="schemaEtudes" />
+				
+			<spring:url value="/resources/css/BreadCrumb.css" var="crumcss" /> 	
+			<link rel="stylesheet" href="${crumcss}" type="text/css" />
+			
+<!-- 		<spring:url value="http://ajax.googleapis.com/ajax/libs/jquery/1.3.2/jquery.min.js" var="jquery"/> -->
+			<spring:url value="/resources/js/jquery.min.js" var="jquery"/>
+			<spring:url value="/resources/js/jquery.easing.1.3.js" var="jqueryEasing"/>
+			<spring:url value="/resources/js/jquery.jBreadCrumb.1.1.js" var="jBreadCrumb"/>
+			
+			<script src="${jquery}" type="text/javascript" >
+			<!-- -->
+			</script>
+			<script src="${jqueryEasing}" type="text/javascript" >
+			<!-- -->
+			</script>
+			<script src="${jBreadCrumb}" type="text/javascript" >
+			<!-- -->
+			</script>
+			
+			<script type="text/javascript">
+               jQuery(document).ready(function()
+               {
+                   jQuery("#breadCrumb2").jBreadCrumb();
+               })
+             
+        	</script>
+		</head>
+		<body>
+			<div id="header">
+<!-- 				<p>header</p> -->
+			</div>	
+			<div id="nav">
+				<div id="nav-left">
+					<div class="breadCrumbHolder module">
+                		<div id="breadCrumb2" class="breadCrumb module">
+							<ul>
+				<p>
+					<c:choose>
+						<c:when test="${loggedPersonne == null}">
+							<a href="identification.htm"><fmt:message key="home.login"/></a>
+						</c:when>
+						<c:otherwise>
+							Bonjour ${loggedPersonne.prenom} ${loggedPersonne.nom}
+							<p>
+								<a href="j_spring_security_logout">Se déconnecter</a>
+							</p>
+      					</c:otherwise>
+					</c:choose>
+ 				</p> 
+		    				</ul>
+	    				</div>
+    				</div>
+				</div><!-- fin <div id="nav-left"> -->
+				<div id="nav-right">
+					
+				</div><!-- fin <div id="nav-right"> -->	
+			</div><!-- fin <div id="nav"> -->
+			<div id="body">
+				
+<!-- 				<sec:authorize access="hasAnyRole('ROLE_ADMIN','ROLE_USER')"> 
+				<p class="alerte0">
+					Menu de travail :
+					<a href="etat.htm">État de la publication</a>, <a href="responsablesROF.htm">Responsables ROF</a>
+				</p>
+				</sec:authorize> -->
+				
+				<h2><fmt:message key="home.message"/></h2>
+				
+				
+				
+				
+			</div><!-- fin <div id="body"> -->
+			<div id="footer">
+				<center class="smaller">
+					Aix-Marseille Université - 58, bd charles livon - 13284 marseille cedex 07 - france tél : 33 (0) 4 91 39 65 00 - fax : 33 (0) 4 91 31 31 36 |
+					<a href="http://www.univ-amu.fr/mentions-legales">Mentions légales</a>
+				</center>
+			</div><!-- fin <div id="footer"> -->
+		</body>
+	</html>
+</jsp:root>
