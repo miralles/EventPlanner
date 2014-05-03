@@ -1,0 +1,167 @@
+html 
+{
+	height: 101%;	
+	background-color: #EDEAE0; 
+}
+
+body
+{
+ 	background-color: white;
+	margin: 0;
+	margin-left: 20%;
+	margin-right: 19.4%;
+	min-width: 600px;
+	height:120%;
+	border-left: 2px solid rgb(19, 121, 198);
+	border-right: 2px solid rgb(19, 121, 198);
+	font-family: Verdana,Arial,sans-serif;
+}
+
+p, div, ul, li
+{
+	font-size: small;
+}
+
+#header
+{
+
+	background-image: url("../images/AMU.png");
+	background-repeat: no-repeat;
+/* 	background-color: white; */
+	padding: 55px 10px;	
+/* 	border: 1px solid black; */
+	margin-left: auto;
+	margin-right: auto;
+	border-bottom-color: red;
+}
+
+
+
+#nav
+{
+	background-color: white;
+	height: 40px;
+	border: 2px solid white;
+/* 	border-bottom-color: yellow; */
+	margin-left: auto;
+	margin-right: auto;
+}
+
+#nav-left
+{
+	background-color: white;
+}
+
+#nav-right
+{
+	background-color: white;
+	margin-top: 1px;
+	float: right;
+}
+
+#body
+{
+	background-color: white;
+
+/* 	height: 690px; */
+/* 	margin-top:42px; */
+
+	padding-left: 10px;
+
+	
+}
+
+#footer
+{
+/* 	background-color: white; */
+	float: bottom;
+	text-align: center;
+	padding-top: 20px;
+/* 	border: 4px groove blue; */
+	height: 40px;
+}
+
+center
+{
+	background-color: white;
+	float: bottom;
+	font-size: 10px;
+}
+
+div.titre-pave 
+{
+    padding: 2px 8px;
+    background: -moz-linear-gradient(center top , White, rgb(237, 234, 224)) repeat scroll 0% 0% rgb(237, 234, 224);
+    border-radius: 8px 8px 0px 0px;
+    border-bottom: 1px dashed;
+    font-weight: bold;
+    color: rgb(19, 121, 198);
+}
+
+div.corps-pave {
+    margin: 4px 10px 8px;
+    padding: 3px;
+}
+
+div.pave-droite {
+    background: none repeat scroll 0 0 White;
+    border: 1px solid Grey;
+    border-radius: 10px 10px 10px 10px;
+    box-shadow: 2px 1px 8px #AAAAAA;
+    margin-bottom: 20px;
+    padding: 0;
+    text-align: left;
+    width: 250px;
+}
+
+div.pave-droite ul {
+    list-style-image: url("../images/puce.png");
+    margin: 0;
+    padding-left: 10px;
+}
+
+ul 
+{
+    list-style-image: url("../images/puce.png");
+}
+
+h2
+{
+	color: rgb(19, 121, 198);
+	font-size: xx-large;
+}
+
+
+
+p.alerte0 {
+	position:absolute;
+	top: 5px; right:22%;
+	width: 350px;
+	padding: 5px;
+	background-color: white;
+	border: solid 2px red;
+	margin: 0px;
+}
+
+p.alerte1 {
+	position: absolute;
+	font-weight: bold;
+	top:40px; right:22%;
+	background-color: #FFB9B3;
+	padding:5px; width:350px;
+	border:solid 2px red;
+	color:red;
+	margin: 0px;
+}
+
+p.alerte2 {
+	position: absolute;
+	font-weight: bold;
+	top:75px; right:22%;
+	background-color: #FFB9B3;
+	padding:5px; width:350px;
+	border:solid 2px red;
+	color:red;
+	margin: 0px;
+}
+

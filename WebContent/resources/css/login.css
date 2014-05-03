@@ -1,0 +1,79 @@
+body
+{
+ 	background-color: #EDEAE0; 
+	margin: 0;
+	margin-left: 20%;
+	margin-right: 19.4%;
+	min-height: 890px;
+	min-width: 600px;
+	height:100%;
+	border-left: 2px solid rgb(19, 121, 198);
+	border-right: 2px solid rgb(19, 121, 198);
+}
+
+#header
+{
+
+	background-image: url("../images/AMU.png");
+	background-repeat: no-repeat;
+	background-color: white;
+	padding: 55px 10px;	
+/* 	border: 1px solid black; */
+	margin-left: auto;
+	margin-right: auto;
+	border-bottom-color: red;
+}
+
+
+
+#nav
+{
+	background-color: white;
+	height: 40px;
+	border: 2px solid white;
+/* 	border-bottom-color: yellow; */
+	margin-left: auto;
+	margin-right: auto;
+}
+
+#nav-left
+{
+
+}
+
+#nav-right
+{
+
+	margin-top: 1px;
+	float: right;
+}
+
+#body
+{
+	background-color: white;
+
+	height: 690px;
+	margin-top:42px;
+
+	padding-left: 10px;
+
+	
+}
+
+#footer
+{
+	background-color: white;
+	float: bottom;
+	text-align: center;
+/* 	border: 4px groove blue; */
+	height: 40px;
+}
+
+center
+{
+	float: bottom;
+	font-size: 10px;
+}
+
+
+
