@@ -22,7 +22,7 @@ public class AccountDaoTest extends AbstractTransactionalJUnit4SpringContextTest
 	
 	@Test
 	public void findAllPersonnesTest(){
-		assertEquals(2,personneDao.findAllPersonnes().size());
+		assertEquals(1,personneDao.findAllPersonnes().size());
 	}
 			
 	@Test

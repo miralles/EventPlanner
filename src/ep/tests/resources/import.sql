@@ -1,11 +1,11 @@
-' INSERT INTO account VALUES ('code','login','mail','nickname','password');
-INSERT INTO account VALUES ('PER01','aze','test@test.com','qsd','1a054e25fc0a4d80dab73dbf4fa01dfa3969ac2b '); ' mdp = wxc
-INSERT INTO account VALUES ('PER02','admin','test@tes.com','nick','aa36dc6e81e2ac7ad03e12fedcb6a2c0');
+-- INSERT INTO account VALUES ('code','login','mail','nickname','password');
+INSERT INTO account VALUES ('PER01','Moa','test@test.com','Jerome','693c74c82315555b3e2a35242c1ccb6510a10564'); -- mdp = moamdp
+INSERT INTO account VALUES ('PER02','Toa','test@tes.com','toto','514697ec4dac9a91c656782e9a159735f999e200'); --mdp = toa42
 
 
 INSERT INTO account_statut VALUES('PER01','ROLE_ADMIN');
 INSERT INTO account_statut VALUES('PER02','ROLE_USER');
-INSERT INTO account_statut VALUES('PER02','ROLE_ROF');
+-- INSERT INTO account_statut VALUES('PER02','ROLE_ROF');
 
 -- INSERT INTO composante (code, acronyme, nom, web, version) VALUES ('COMPO01','ACRO1','NOM1','WEB1', 0);
 -- INSERT INTO composante (code, acronyme, nom, web, version) VALUES ('COMPO02','ACRO2','NOM2','WEB2', 0);

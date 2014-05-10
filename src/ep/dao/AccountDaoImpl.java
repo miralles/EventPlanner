@@ -24,6 +24,7 @@ public class AccountDaoImpl implements AccountDao{
 	}
 	
 	public Account findPersonneByCode(String code) {
+		System.out.println("findPersonneByCode : " + code);
 		return em.find(Account.class, code);
 	}
 
@@ -35,14 +36,39 @@ public class AccountDaoImpl implements AccountDao{
 		try
 		{
 			personne = (Account)query.getSingleResult();
-			System.out.println("log : " + personne.getLogin() + " mdp : " + personne.getPassword());
+			System.out.println("findPersonneByIdExt idext : " + idext + " log : " + personne.getLogin() + " mdp : " + personne.getPassword());
 		}
 		catch (NoResultException e)
 		{
+			System.out.println("Catch NoResultException by findPersonneByIdExt");
 			return null;
 		}
 
 		return personne;
+	}
+	
+	public void addAccount(Account account, String idext) {
+		Account personne;
+		boolean isExist = false;
+		Query query = em.createQuery("SELECT e FROM account e WHERE login=?1").setParameter(1, idext);
+		
+		try
+		{
+			personne = (Account)query.getSingleResult();
+			System.out.println("isExist ? log : " + personne.getLogin() + " mdp : " + personne.getPassword());
+			isExist=true;
+			
+		}
+		catch (NoResultException e)
+		{
+			
+		}
+		
+		if(!isExist)
+		{
+			//TODO ; ajouter account 
+		}
+		
 	}
 
 	public void savePersonne(Account p) {

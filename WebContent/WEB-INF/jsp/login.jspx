@@ -51,14 +51,14 @@
 					<div class="breadCrumbHolder module">
                 		<div id="breadCrumb2" class="breadCrumb module">
 							<ul>
-								<c:forEach items="${arianes}" var="ariane">
-									<li>
-										<a href="${ariane.url}">${ariane.nom}</a>
-									</li>
-		    					</c:forEach>
+								<p>
+									<a href="accueil.htm"><fmt:message key="home.title"/> </a>
+									<a href="register.htm"><fmt:message key="home.register"/></a>
+								</p>
 		    				</ul>
 	    				</div>
     				</div>
+    				
 				</div><!-- fin <div id="nav-left"> -->
 				<div id="nav-right">
 					
@@ -89,7 +89,7 @@
 			            </div>
 			        </div>
 			    </form>
-				<p><a href="accueil.htm"><fmt:message key="home.title"/></a></p>
+				
 			</div><!-- fin <div id="body"> -->
 			<div id="footer">
 				<center class="smaller">

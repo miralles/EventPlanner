@@ -15,6 +15,8 @@ public interface AccountDao {
 	Account findPersonneByCode(String code);
 	
 	Account findPersonneByIdExt(String idext);
+	
+	public void addAccount(Account account, String idext);
 
 	void savePersonne(Account p);
 

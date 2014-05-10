@@ -15,7 +15,7 @@
 		<head>
 			<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 			      
-			<title><fmt:message key="home.title"/></title>
+			<title><fmt:message key="register.title"/></title>
 			<spring:url value="/resources/css/home.css" var="homecss" /> 	
 			<link rel="stylesheet" href="${homecss}" type="text/css" />
 			<spring:url value="/resources/images/schema_etudes.png" var="schemaEtudes" />
@@ -54,27 +54,12 @@
 				<div id="nav-left">
 					<div class="breadCrumbHolder module">
                 		<div id="breadCrumb2" class="breadCrumb module">
-                		
-			 					
-			 				
 							<ul>
 								<p>
-									<c:choose>
-										<c:when test="${loggedPersonne == null}">
-											<a href="register.htm"><fmt:message key="home.register"/></a>
-											<a href="identification.htm"><fmt:message key="home.login"/></a>
-										</c:when>
-										<c:otherwise>
-											Bonjour ${loggedPersonne.nickname} 
-											<p>
-												<a href="j_spring_security_logout">Se déconnecter</a>
-											</p>
-				      					</c:otherwise>
-									</c:choose>
+									<a href="accueil.htm"><fmt:message key="home.title"/></a>
 				 				</p>
 				 				
 		    				</ul>
-		    				
 	    				</div>
     				</div>
 				</div><!-- fin <div id="nav-left"> -->
@@ -91,9 +76,42 @@
 				</p>
 				</sec:authorize> -->
 				
-				<h2><fmt:message key="home.message"/></h2>
+				<h2><fmt:message key="register.message"/></h2>
 				
-				
+				<h1><fmt:message key="login.invite"/></h1>
+				<c:if test="${not empty error}">
+					<div class="login-failure">
+						<fmt:message key="login.failure"/><br /> <fmt:message key="login.cause"/>
+						${sessionScope["SPRING_SECURITY_LAST_EXCEPTION"].message}
+					</div>
+				</c:if>
+			
+				<form id="formLogin" method="post" action="j_spring_security_check">
+			        <div id="passwordLoginOption">
+			            <ul class="label-input">
+			            	<li>
+				            	<label for="j_pseudo"><fmt:message key="register.form.pseudo"/></label>                
+				            	<input id="j_pseudo" type="text" name="j_pseudo" />
+	                        </li>
+	                        <li> 
+			                	<label for="j_username"><fmt:message key="register.form.username"/></label>                
+				            	<input id="j_username" type="text" name="j_username" />
+			                </li>
+			                <li> 
+			                	<label for="j_password"><fmt:message key="register.form.password"/></label>
+			                	<input id="j_password" type="password" name="j_password" />
+			                </li>
+			                <li> 
+			                	<label for="j_email"><fmt:message key="register.form.email"/></label>
+			                	<input id="j_email" type="email" name="j_email" />
+			                </li>
+			            </ul>
+			            <div>
+			            	<fmt:message key="register.form.submit" var="submitValue" />
+			                <input class="buttons" type="submit" value="${submitValue}"/>
+			            </div>
+			        </div>
+			    </form>
 				
 				
 			</div><!-- fin <div id="body"> -->

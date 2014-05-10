@@ -26,6 +26,12 @@ public class EpController
 			model.addAttribute("loggedPersonne", personneManager.findPersonByIdExt(CustomUserDetails.getCurrentUserLogin()));
 		return new ModelAndView("home");
 	}
+	
+	@RequestMapping("/register.htm")
+	public ModelAndView register()
+	{
+		return new ModelAndView("register");
+	}
 
 	@RequestMapping("/identification.htm")
 	public ModelAndView login()

@@ -25,7 +25,7 @@ import ep.model.Statut;
 
 /**
  * Classe permettant la convertion de la classe Personne en UserDetails afin de pouvoir être traitée par le module Spring security
- * @author Alexandre Monties
+ * @author 
  * @version 1.0
  */
 @SuppressWarnings("deprecation")
